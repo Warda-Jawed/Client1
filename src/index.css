@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", sans-serif;
+  --font-display: "Instrument Serif", serif;
+  --color-forest: #173830;
+  --color-forest-deep: #0f2822;
+  --color-cream: #f4f0e8;
+  --color-sand: #d8cdbd;
+  --color-coral: #e25d46;
+  --color-ink: #18201e;
+}
+
+html { scroll-behavior: smooth; overflow-x: clip; }
+body { margin: 0; min-width: 320px; background: #f9f7f2; color: #18201e; font-family: var(--font-sans); overflow-x: clip; }
+button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
+input, select, textarea { font-size: 16px; }
+*:focus-visible { outline: 3px solid #e25d46; outline-offset: 3px; }
+.display { font-family: var(--font-display); font-weight: 400; letter-spacing: -.025em; }
+.eyebrow { letter-spacing: .16em; text-transform: uppercase; font-size: .72rem; font-weight: 600; }
+.noise { background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.03'/%3E%3C/svg%3E"); }
+@media (max-width: 374px) { .eyebrow { font-size: .64rem; letter-spacing: .12em; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }
